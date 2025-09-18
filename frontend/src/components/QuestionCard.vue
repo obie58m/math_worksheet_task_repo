@@ -63,6 +63,7 @@ function hintClass(oi) {
           :value="oi"
           :checked="picked === oi"
           :disabled="submitted"
+          :aria-label="`Option ${String.fromCharCode(97 + oi)}: ${opt}`"
           @change="$emit('update:picked', oi)"
         />
         <span>{{ String.fromCharCode(97 + oi) }}.</span>

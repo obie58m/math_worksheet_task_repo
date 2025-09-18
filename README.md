@@ -54,6 +54,26 @@ License and attribution
 - Worksheet content reproduced from: https://www.mathinenglish.com — included in the app footer.
 
 If you'd like, I can implement a small set of fixes first (preserve name on reset, better API error handling, small accessibility improvements) and then deploy to Vercel for you. Tell me which route you prefer: I deploy using MongoDB Atlas + Vercel, or I adapt the app to your preferred hosting.
+ 
+ Live demo and repository
+ - Live app: (add URL after deployment)
+ - Repository: (add GitHub repo URL after pushing)
+
+ Requirements coverage
+ - Build a math worksheet using a JavaScript framework like Vue (v3) or React: Done (Vue 3 / Vite frontend).
+ - Incorporate everything from the worksheet, including copyright information: Done (questions copied from mathinenglish.com and footer attribution present).
+ - Style the worksheet with responsive design: Done (responsive CSS in `frontend/src/style.css`).
+ - Include a reset button to clear selected answers: Done (Reset button in UI preserves name by design).
+ - Implement a submit button to calculate a score (0-12): Done (Submit calculates and displays score).
+ - Display the score: Done (score shown in header and modal).
+ - Require users to input their name before calculating the score: Done (validation prevents submit without name).
+ - Deploy the web app using a cloud provider of your choice: Pending (deploy to Vercel recommended — add link after deploy).
+
+ Notes on optional/bonus items
+ - CSS animations: Small animations are included (card hover, score pop). More can be added on request.
+ - Backend score logging: Implemented as serverless MongoDB endpoints in `backend/api` and an Express+SQLite local alternative in `backend/src`.
+
+ If you want, I can now push this repository to GitHub and deploy to Vercel using a free MongoDB Atlas cluster. Tell me whether you want me to perform the deploy and which GitHub account/org to use (or provide a repo URL).
 # Math Worksheet Project
 
 This repo contains a Vue 3 frontend and serverless backend API for logging high scores. The app reproduces the "Rounding Off to Nearest 10" worksheet and allows users to submit their name and score.
